@@ -1,0 +1,70 @@
+# 🌗 Light & Dark Landing Page with Video Background
+
+A visually engaging, responsive landing page featuring a background video and theme toggle (light/dark mode), built using **HTML**, **CSS**, and **JavaScript**.
+
+---
+
+## 🎬 Preview
+
+*(Insert a live link or screenshot here if available)*
+
+---
+
+## 🌟 Features
+
+- 🌗 Toggle between **light** and **dark** themes
+- 🎥 Smooth **video background switch** on theme change
+- 📱 Responsive design with **menu toggle**
+- 📹 Includes two video backgrounds (`video1.mp4`, `video2.mp4`)
+- ⚙️ Animated navigation and social icons using **Ionicons**
+
+---
+
+## 📁 Project Structure
+
+light-dark-landing-page/
+│
+├── index.html # Main HTML file
+├── style.css # CSS styling (not included here)
+├── script.js # JavaScript interactivity
+├── assets/
+│ ├── video1.mp4 # Light mode background video
+│ ├── video2.mp4 # Dark mode background video
+│ └── tree.jpg # Mask image overlay
+
+
+---
+
+## 🚀 How It Works
+
+### ✨ Theme Toggle
+- Clicking the 🌙/☀️ icon switches between light and dark modes.
+- Automatically updates background video based on theme:
+  - `video1.mp4` for **light**
+  - `video2.mp4` for **dark**
+
+### 📱 Menu Toggle
+- Click the menu icon (☰) to show/hide navigation links on smaller screens.
+
+---
+
+## 🧠 JavaScript Logic
+
+- **Dark Mode Handling**:
+```js
+dark = !dark;
+lightDark.classList.toggle('active');
+body.classList.toggle('dark');
+video.setAttribute('src', dark ? "assets/video2.mp4" : "assets/video1.mp4");
+
+
+menuToggle.classList.toggle('active');
+navigation.classList.toggle('active');
+
+
+🌐 Dependencies
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
